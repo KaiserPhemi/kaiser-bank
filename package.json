@@ -1,10 +1,8 @@
 {
-  "name": "nodejs-fintech-app",
+  "name": "kaiser-bank",
   "version": "1.0.0",
-  "description": "NestJS node BankingApp",
-  "author": "Jakub Zomerfeld - devzom",
+  "description": "Banking API",
   "private": false,
-  "license": "UNLICENSED",
   "scripts": {
     "migrate": "ts-node ./migrate.ts",
     "prebuild": "rimraf dist",
@@ -13,7 +11,7 @@
     "copy-assets": "cp -rv src/assets/i18n dist/assets/",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
-    "start:dev": "nest start --watch",
+    "dev": "nest start --watch",
     "hot": "nest build --webpack --webpackPath webpack-hmr.config.js",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
